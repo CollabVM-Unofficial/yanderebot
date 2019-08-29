@@ -78,7 +78,7 @@ function connectToServer() {
 				case "chat":
 				switch(command) {
 					case prefix + "help":
-					setTimeout(function() { chat('y>help y>kit y>google y>youtube y>info'); }, 3000);
+					setTimeout(function() { chat('y>help y>kit y>google y>youtube y>e621 y>info'); }, 3000);
 					setTimeout(function() { chat('y>test y>minecraft'); }, 6000);
 					break;
 					case prefix + "kit":
@@ -111,6 +111,11 @@ function connectToServer() {
 					case prefix + "google":
 					let arg = command.split(' ');
 					setTimeout(function() { chat(`https://google.com/search?q=${arg.join('+')}`); }, 3000);
+					setTimeout(function() { chat('If you didnt get a URL, message probably too big.'); }, 6000);
+					break;
+					case prefix + "e621":
+					let arg = command.split(' ');
+					setTimeout(function() { chat(`https://e621.net/post?tags=${arg.join('+')}`); }, 3000); // glaceon sexy
 					setTimeout(function() { chat('If you didnt get a URL, message probably too big.'); }, 6000);
 					break;
 					case prefix + "youtube":
