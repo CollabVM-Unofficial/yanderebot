@@ -113,14 +113,14 @@ function connectToServer() {
 					setTimeout(function() { chat(`https://google.com/search?q=${arg.join('+')}`); }, 3000);
 					setTimeout(function() { chat('If you didnt get a URL, message probably too big.'); }, 6000);
 					break;
-					case prefix + "e621":
-					let arg = command.split(' ');
-					setTimeout(function() { chat(`https://e621.net/post?tags=${arg.join('+')}`); }, 3000); // glaceon sexy
-					setTimeout(function() { chat('If you didnt get a URL, message probably too big.'); }, 6000);
-					break;
 					case prefix + "youtube":
 					let arg = command.split(' ');
 					setTimeout(function() { chat(`https://www.youtube.com/results?search_query=${arg.join('+')}`); }, 3000);
+					setTimeout(function() { chat('If you didnt get a URL, message probably too big.'); }, 6000);
+					break;
+					case prefix + "e621":
+					let arg = command.split(' ');
+					setTimeout(function() { chat(`https://e621.net/post?tags=${arg.join('+')}`); }, 3000); // glaceon sexy
 					setTimeout(function() { chat('If you didnt get a URL, message probably too big.'); }, 6000);
 					break;
 					case prefix + "info":
